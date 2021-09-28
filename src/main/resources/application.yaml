@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: lucene-sample
+  datasource:
+    url: jdbc:hsqldb:mem:testdb
+    username: sa
+    password:
+  jpa:
+    properties:
+      hibernate:
+        search:
+          default:
+            directory_provider: ram
+    show-sql: true
+    hibernate:
+      ddl-auto:  update
